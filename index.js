@@ -80,7 +80,7 @@ async function getCoordinate(){
     }
     catch(error){
         console.log('An Error occured: ',error)
-        return[`Error occured ${error} ${resp} ${travelLocation}`]
+        return[`Error occured ${error} ${resp} ${travelLocation} http://api.geonames.org/wikipediaSearchJSON?q=${travelLocation}&maxRows=1&username=ayiamco`]
     }
 } 
 
