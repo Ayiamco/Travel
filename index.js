@@ -80,7 +80,7 @@ async function getCoordinate(){
     }
     catch(error){
         console.log('An Error occured: ',error)
-        return["Error occured"]
+        return[`Error occured ${error}`]
     }
 } 
 
