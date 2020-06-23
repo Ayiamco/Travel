@@ -116,9 +116,9 @@ async function addTrip(){
     else{
         //get travel location coordinates
         let coord= await getCoordinate()
-    
+        console.log(coord)
         if (coord.length==1){
-            document.getElementById('errorMessage').textContent="Please Check Network and City spelling."
+            document.getElementById('errorMessage').textContent=`Error .${String(coord)}`
             document.getElementById('errorMessage').style.display="block"
             
         }
